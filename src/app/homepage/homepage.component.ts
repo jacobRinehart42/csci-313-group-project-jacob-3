@@ -28,7 +28,7 @@ export class HomepageComponent implements OnInit {
     if(bound == ""){
       return true;
     }
-    var pricen = parseInt(price);
+    var pricen = parseInt(price.split("$")[1]);
     var boundn = parseInt(bound);
     return pricen > boundn;
   }
@@ -37,7 +37,7 @@ export class HomepageComponent implements OnInit {
     if(bound == ""){
       return true;
     }
-    var pricen = parseInt(price);
+    var pricen = parseInt(price.split("$")[1]);
     var boundn = parseInt(bound);
     return pricen < boundn;
   }

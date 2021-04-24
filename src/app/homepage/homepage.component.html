@@ -1,6 +1,7 @@
+<br>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
-<div>
+<div style="background: #f8f8f8;">
 <h2 class="header-section"><span>Top Picks From Us</span></h2>
 <div class="search-input" >
       <div class="row">
@@ -74,8 +75,8 @@
           item.nicheMarket.toLowerCase().includes(searchMark.toLowerCase()) &&
           item.tags.toLowerCase().includes(searchTags.toLowerCase())  &&
           item.underNegotiation.toLowerCase().includes(searchUnderNeg.toLowerCase()) &&
-          comparePriceMin(item.price, searchPriMin) &&
-          comparePriceMax(item.price, searchPriMax)" [item]="item"></app-items> </div>
+          comparePriceMin(item.askingPrice, searchPriMin) &&
+          comparePriceMax(item.askingPrice, searchPriMax)" [item]="item"></app-items> </div>
       </div>
     </div>
   </div>
