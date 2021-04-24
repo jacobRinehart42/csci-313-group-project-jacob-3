@@ -25,12 +25,18 @@ export class HomepageComponent implements OnInit {
   ngOnInit() { this.itemsList = this.itemService.items ; }
 
   comparePriceMin(price: string, bound: string){
+    if(bound == ""){
+      return true;
+    }
     var pricen = parseInt(price);
     var boundn = parseInt(bound);
     return pricen > boundn;
   }
 
   comparePriceMax(price: string, bound: string){
+    if(bound == ""){
+      return true;
+    }
     var pricen = parseInt(price);
     var boundn = parseInt(bound);
     return pricen < boundn;

@@ -73,7 +73,9 @@
           item.dimensions.toLowerCase().includes(searchDimen.toLowerCase()) && 
           item.nicheMarket.toLowerCase().includes(searchMark.toLowerCase()) &&
           item.tags.toLowerCase().includes(searchTags.toLowerCase())  &&
-          item.underNegotiation.toLowerCase().includes(searchUnderNeg.toLowerCase())" [item]="item"></app-items> </div>
+          item.underNegotiation.toLowerCase().includes(searchUnderNeg.toLowerCase()) &&
+          comparePriceMin(item.price, searchPriMin) &&
+          comparePriceMax(item.price, searchPriMax)" [item]="item"></app-items> </div>
       </div>
     </div>
   </div>
