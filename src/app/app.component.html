@@ -33,10 +33,4 @@
 
 <app-edit-item *ngIf="this.routService.showEditItem"></app-edit-item>
 
-<div *ngIf="this.routService.showItems">
-  <app-items
-    *ngFor="let x of items; let i = index"
-    [item]="x"
-    [id]="i"
-  ></app-items>
-</div>
+
