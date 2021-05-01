@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
   <div class="container">
     <h2> {{currentItem.name}}</h2>
     <table>
@@ -54,4 +54,77 @@
       </tr>
     </table>
   </div>
-</body>
+</body> -->
+
+<br>
+
+<div class="container center">
+  <!-- <div class="card">
+        <div class="card-body center"> -->
+
+  <!-- <p *ngIf="negotiating == true">Item is currently being negotiated!</p> -->
+
+  <h1>{{ currentItem.name }}</h1>
+
+  <div class="font">
+    <br>
+    <strong><em>Description:</em></strong> {{ currentItem.description }}
+    <br>
+    <br>
+    <strong><em style="color:#007bff">Condition:</em></strong> {{ currentItem.conditionAndAge }}
+    <br>
+    <br>
+    <strong><em style="color:#007bff">Asking Price:</em></strong> {{ currentItem.askingPrice }}
+    <br>
+    <br>
+    <strong><em>Other Information:</em></strong> {{ currentItem.otherInfo }}
+    <br>
+    <br>
+    <strong><em>Dimensions:</em></strong> {{ currentItem.dimensions }}
+    <br>
+    <br>
+    <strong><em>Niche Market:</em></strong> {{ currentItem.nicheMarket }}
+    <br>
+    <br>
+    <strong><em>Tags:</em></strong> #{{ currentItem.tags }}
+    <br>
+    <br>
+    <strong><em style="color:#007bff">Under Negotiation:</em></strong> {{ currentItem.underNegotiation }}
+  </div>
+
+  <br>
+
+  <hr />
+
+  <h1>Seller Information</h1>
+
+  <div class="font">
+
+    <br>
+    <strong><em>Seller Name:</em></strong> {{ currentItem.seller }}
+    <br>
+    <br>
+    <strong><em>Phone Number:</em></strong> {{ itmService.getOwnerInfo(currentItem.itemId).phoneNumber }}
+    <br>
+    <br>
+    <strong><em>Email:</em></strong> {{ itmService.getOwnerInfo(currentItem.itemId).email }}
+    <br>
+
+  </div>
+
+  <br>
+
+  <hr />
+
+  <div class="center">
+    <br>
+
+    <button class="editButton btn btn-primary back" type="button" (click)="onBackToItemsPage()">Go Back!</button>
+
+  </div>
+
+  <!-- </div>
+    </div> -->
+</div>
+
+<br>

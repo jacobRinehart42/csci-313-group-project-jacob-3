@@ -28,6 +28,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onLogin() {
@@ -42,6 +43,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = true;
+    this.showItem = false;
   }
 
   onShowCreateAccount() {
@@ -56,6 +58,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowSignedInUser() {
@@ -70,6 +73,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowCreateItem() {
@@ -84,6 +88,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowMyItems() {
@@ -98,6 +103,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = true;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowPassword() {
@@ -112,6 +118,7 @@ export class RoutingService {
     this.showPassword = true;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowEditItem() {
@@ -126,6 +133,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowItems() {
@@ -140,6 +148,7 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = false;
+    this.showItem = false;
   }
 
   onShowHomePage() {
@@ -154,6 +163,22 @@ export class RoutingService {
     this.showPassword = false;
     this.showMyItems = false;
     this.showHomepage = true;
+    this.showItem = false;
+  }
+
+  onShowItem() {
+    this.showLogin = false;
+    this.showCreateAccount = false;
+    this.showDashboard = true;
+    this.showSignOut = false;
+    this.showItems = false;
+    this.showEditItem = false;
+    this.showSignedInUserInfo = false;
+    this.showCreateItem = false;
+    this.showPassword = false;
+    this.showMyItems = false;
+    this.showHomepage = false;
+    this.showItem = true;
   }
 
   constructor() {}

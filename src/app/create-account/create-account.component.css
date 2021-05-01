@@ -4,24 +4,22 @@
   box-sizing: border-box;
 }
 body {
-
   background: url(https://cdn.dribbble.com/users/969366/screenshots/9236685/media/39f1b57fe6e92e271cb3d77d338f0b30.jpg?compress=1&resize=1600x1200)
     no-repeat center;
-  background-size: cover;
   font-family: "Spectral SC", serif;
 }
 .register {
-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.description p{
-  position:relative;
+.description p {
+  position: relative;
   top: -30px;
   font-weight: lighter;
   font-size: 15px;
-  font:italic;
+  font: italic;
 }
 .form {
   position: relative;
@@ -33,15 +31,14 @@ height: 100vh;
   color: #fff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
 }
-.form .textArea{
+.form .textArea {
   position: relative;
   width: 100%;
 }
-textarea{
-margin-top:0px; 
-margin-bottom:0px; 
-height:86px;
-
+textarea {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 86px;
 }
 .form::before {
   content: "";

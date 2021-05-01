@@ -8,23 +8,10 @@ import { RoutingService } from "../routing.service";
   styleUrls: ["./item.component.css"]
 })
 export class ItemComponent implements OnInit {
-  currentItem = {
-    itemId: 0,
-    owningUserId: 1,
-    name: "",
-    askingPrice: "",
-    underNegotiation: "",
-    seller: "",
-    nicheMarket: "",
-    tags: "",
-    description: "",
-    dimensions: "",
-    conditionAndAge: "",
-    otherInfo: ""
-  };
+  currentItem;
 
   constructor(
-    private itmService: ItemsService,
+    public itmService: ItemsService,
     private routService: RoutingService
   ) {}
 
@@ -33,6 +20,10 @@ export class ItemComponent implements OnInit {
   }
 
   onBackToItemsPage() {
-    this.routService.onShowItems();
+    this.routService.onShowHomePage();
   }
+
+  // showSeller() {
+  //   this.routService.onShowSignedInUser();
+  // }
 }

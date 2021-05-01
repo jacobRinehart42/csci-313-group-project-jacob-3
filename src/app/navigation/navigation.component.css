@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 .logo {
   font-family: "Dancing Script", cursive;
   color: #4d1c2f;
@@ -18,6 +19,17 @@ nav {
   font-family: "Spectral SC", serif;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+.nav-item {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -25,20 +37,24 @@ nav {
 }
 .nav-link1:hover {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .nav-link2:hover {
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 .nav-link3:hover {
+  cursor: pointer;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 .nav-link4:hover {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .nav-link-logo {
   text-decoration: none;
   color: #4d1c2f;
+  cursor: pointer;
 }
 .nav-link-logo:hover {
   box-shadow: 0 0 15px rgb(252, 250, 250);
@@ -53,7 +69,7 @@ nav {
   font-size: 15px;
   font-weight: bold;
 }
-.burger {
+/* .burger {
   display: none;
   cursor: pointer;
 }
@@ -63,8 +79,8 @@ nav {
   width: 25px;
   height: 3px;
   margin: 5px;
-}
-@media screen and (max-width: 1024px) {
+} */
+/* @media screen and (max-width: 1024px) {
   .nav-links {
     width: 50%;
   }
@@ -95,15 +111,15 @@ nav {
 }
 .nav-active {
   transform: translateX(0%);
-}
-.search-input {
+} */
+/* .search-input {
   background: whitesmoke;
   list-style: none;
   width: 35%;
   border-radius: 25px;
   box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.1);
-}
-.search-input input {
+} */
+/* .search-input input {
   height: 50px;
   width: 100%;
   outline: none;
@@ -113,28 +129,28 @@ nav {
   font-size: 18px;
 
   box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);
-}
-.search-input .autocom-box {
+} */
+/* .search-input .autocom-box {
   padding: 5px 10px 20px;
   max-height: 280px;
   overflow-y: auto;
   opacity: 55%;
-  /* pointer-events: none; */
-}
-.search-input .autocom-box:hover {
+  pointer-events: none;
+} */
+/* .search-input .autocom-box:hover {
   opacity: 100%;
-}
-.autocom-box li {
+} */
+/* .autocom-box li {
   padding: 8px 12px;
   width: 100%;
   cursor: default;
   border-radius: 3px;
   color: #4d1c2f;
 
-  /* display: none; */
-}
-.autocom-box li:hover {
+  display: none;
+} */
+/* .autocom-box li:hover {
   background: lightgrey;
   border-radius: 100vh;
   opacity: 100%;
-}
+} */

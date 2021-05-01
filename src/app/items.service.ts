@@ -123,7 +123,7 @@ export class ItemsService {
   getUniqueItemId() {
     var id = 1;
     for (var i = 0; i < this.items.length; i++) {
-      if (id == this.items[i].itemId) {
+      if (id <= this.items[i].itemId) {
         id = this.items[i].itemId;
       }
     }
@@ -166,22 +166,22 @@ export class ItemsService {
     }
   }
 
-  updateNegotiationStatus(itemId: number, newStatus: string){
-    for(var i = 0; i < this.items.length; i++){
-      if(this.items[i].itemId == itemId){
+  updateNegotiationStatus(itemId: number, newStatus: string) {
+    for (var i = 0; i < this.items.length; i++) {
+      if (this.items[i].itemId == itemId) {
         this.items[i].underNegotiation = newStatus;
         return;
       }
     }
   }
 
-  getOwnerInfo(itemId: number){
-    for(var i = 0; i < this.items.length; i++){
-      if(this.items[i].itemId == itemId){
+  getOwnerInfo(itemId: number) {
+    for (var i = 0; i < this.items.length; i++) {
+      if (this.items[i].itemId == itemId) {
         var userNumber = this.items[i].owningUserId;
-        var accountList =  this.accnt.accounts;
-        for(var j = 0 ; j < accountList.length; j++){
-          if(accountList[j].id == userNumber){
+        var accountList = this.accnt.accounts;
+        for (var j = 0; j < accountList.length; j++) {
+          if (accountList[j].id == userNumber) {
             return accountList[j];
           }
         }
